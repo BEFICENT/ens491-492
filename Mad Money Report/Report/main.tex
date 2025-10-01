@@ -1,0 +1,213 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
+
+% ---------- Colors (optional subtle accent) ----------
+\usepackage{xcolor}
+\definecolor{SUblue}{RGB}{0,51,102} % Sabancı-style deep blue
+
+% ---------- Titlepage ----------
+\begin{document}
+\thispagestyle{empty}
+\begin{titlepage}
+    \centering
+
+    % --- University Name ---
+    {\Large\bfseries \textcolor{SUblue}{Sabancı University}}\par
+    \vspace{0.15cm}
+    {\large Faculty of Engineering and Natural Sciences}\par
+    \vspace{1.2cm}
+
+    % --- Course Block ---
+    {\large \textbf{ENS491 — Graduation Project Case Study}}\par
+    \vspace{0.25cm}
+    {\normalsize \textit{Financial Market Signal Detection \& Portfolio Optimization}}\par
+    \vspace{0.1cm}
+    {\normalsize (Case Study: Insights from CNBC \textit{Mad Money} Episode Analysis)}\par
+
+    \vspace{1.5cm}
+    % --- Title / Report Context ---
+    {\large\bfseries 
+        Market Signal Detection and Orientation Study
+    }\par
+    \vspace{0.3cm}
+    {\large Examination of Media Commentary to Testable Trading Signals}\par
+
+    \vspace{1.6cm}
+    % --- Meta Table (Instructor, Term, Campus) ---
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{>{\bfseries}p{3.5cm} p{10cm}}
+        Course Code & ENS491 \\
+        Instructor  & \textit{Ömer Erhun Kundakçıoğlu}\\
+        Term        & \textit{Fall 2025} \\
+        Campus      & Tuzla, İstanbul \\
+    \end{tabular}
+
+    \vspace{2cm}
+
+    % --- Group Members ---
+    {\large\bfseries Group Members}\par
+    \vspace{0.5cm}
+    \begin{tabularx}{\textwidth}{>{\bfseries}p{6cm} X}
+    \textbf{Student Name} & \textbf{ID} \\
+    \hline
+    Bilal Mehmet Gebeoğlu & \textit{31965} \\
+    Mehmet Onur Sönmez    & \textit{32278} \\
+    Nihat Ömer Karaca     & \textit{30626} \\
+    Deniz Doğa Şen        & \textit{<ID>} \\
+    Ömer Saltuk Sukas     & \textit{<ID>} \\
+    Tuna Solakoğlu        & \textit{32121} \\
+    Efe Sözer             & \textit{31012} \\
+\end{tabularx}
+
+    \vspace{1.2cm}
+
+    % --- Footer line (accent) ---
+    {\color{SUblue}\rule{\textwidth}{0.8pt}}\par
+    \vspace{0.2cm}
+   {\small \textit{This report examines the impact of market information embedded in media narratives on the generation and performance of stock signals.}}
+
+\end{titlepage}
+
+% Reset page counter after title page
+\setcounter{page}{1}
+
+% ---------- Second Page (Abstract) ----------
+\newpage
+\section*{Abstract}
+This report provides an in-depth analysis of how financial market reports, information, and actions --- specifically from the audio of CNBC's \textit{Mad Money} episode \textit{10/25/24} --- affect the stock market and how these effects can be indicators of future signals. Thus, qualitative commentary information is utilized to expose measurable effects for the detection of financial signals.
+
+\vspace{1cm}
+\textbf{Keywords:} Market Signals, Media Narratives, Financial Data, Portfolio Optimization
+
+\section*{Introduction}
+In a world where economic institutions pave the way for the future of humanity, 
+stock markets have long served as a key quantitative indicator of corporate performance. 
+Thus, stocks have been among the most closely examined assets by investors and researchers alike. 
+Therefore, indicators of future performance hold significant importance for investors and analysts seeking to anticipate market movements. 
+To see the effects of these signals, and how they occurred, the audio of CNBC's \textbf{\textit{Mad Money}} episode \textit{\textbf{10/25/24}} is inspected.
+
+\vspace{1cm}
+The media under inspection follows a unique structure: the narrator, Jim Cramer, 
+discusses stocks one by one, almost like a case study. 
+Accordingly, and considering how word-of-mouth information and financial data 
+can affect stock performance, his examples are investigated as follows, 
+with a focus on how they relate to our analysis.
+
+\section{Cases}
+\begin{itemize}
+    \item \textbf{McDonald's} -- Initially discussed in the context of its brand image following an \textbf{E. coli outbreak} (Sep 12, 2024 – Oct 21, 2024) involving \textbf{26 confirmed cases} (with the possibility of more) \cite{wikipedia}. Later discussed in relation to the company’s \textbf{\$5 meal deal} \cite{cnbc}. 
+\vspace{0.3cm}
+
+\textbf{Evaluation:} Even though the E. coli outbreak caused significant damage, 
+the introduction of the low-cost meal deal appears to have counterbalanced its impact. 
+The outbreak resulted in \textbf{104 confirmed cases, 30 hospitalizations, and 1 death} \cite{wikipedia}. 
+Nevertheless, taking 09.09.2024 as the baseline, McDonald’s stock price still increased by approximately \textbf{0.90\%} by 31.10.2024 \cite{yahoo}. 
+More interestingly, the stock had already risen by \textbf{8.70\%} as of 21.10.2024, when the outbreak was at its peak \cite{yahoo}. 
+Finally, on \textbf{03.12.2024}, the CDC officially declared the outbreak over. 
+At that time the stock was up by \textbf{1.20\%} relative to the baseline, and by the following week it had risen further, reaching approximately \textbf{3--3.50\%} \cite{yahoo}.
+
+As a conclusion, the incident was effectively counterbalanced by the company’s promotional meal deal.
+\vspace{0.7cm}
+
+
+
+    \item \textbf{AMD} -- The narrator emphasized that the \textbf{artificial intelligence (AI) market} continues to expand rapidly. 
+    While AMD cannot realistically challenge \textbf{NVIDIA’s market dominance}, 
+    the overall growth of the sector indicates that AMD’s share of the \textbf{“AI Hype”} will also increase significantly \cite{cnbc}.
+
+\vspace{0.3cm}
+
+\textbf{Evaluation:} Although AMD’s stock declined sharply following the \textbf{April 2025 U.S. export control restrictions}, 
+falling by approximately \textbf{37\%}, this was largely driven by investor fears of collapsing China GPU demand. 
+However, the Q1 2025 financial report (released in \textbf{early May}) showed revenue decreased only slightly --- from 
+\textbf{\$7.7 billion in Q4 2024} to \textbf{\$7.44 billion in Q1 2025} (a drop of just \textbf{\$0.3 billion}) \cite{amdQ1}. 
+Expectations of a much steeper decline did not materialize. This reassured investors that AMD’s growth drivers --- particularly in \textbf{data center} and \textbf{AI-related segments} --- 
+remained intact. As a result, long-term optimism around the AI market helped stabilize the stock, 
+even though export restrictions and new customs regulations continued to affect revenues in the following 6--12 months.
+\vspace{0.7cm}
+
+
+    \item \textbf{UPS} -- Kramer emphasized that the main issue for UPS is \textbf{trust}. 
+    Investors and analysts had lost confidence in management due to repeated underperformances, which left UPS in the era of \textbf{“show me stock”} \cite{cnbc}. 
+    He also noted that the \textbf{brief port strike in late July 2024} gave UPS a short-term boost in its forwarding business, 
+    even though global logistics were disrupted \cite{reutersUPS}. 
+    Lastly, in Q2 2024 management forecasted a stronger second half, but investors doubted this guidance and sold off the stock. 
+    In Q3 2024, UPS finally delivered stronger results, proving skeptics wrong. 
+\vspace{0.3cm}
+
+    \textbf{Evaluation:} The port strike impact was a temporary positive trigger, but as Kramer suggested, 
+    it was essentially “artificial” and unsustainable. 
+    UPS regained trust only after it showed real financial improvement in Q3, 
+    demonstrating that short-term events can generate signals but lasting recovery depends on consistent performance.
+\vspace{0.7cm}
+
+
+    \item \textbf{Tractor Supply} -- Kramer assessed Tractor Supply positively, 
+    noting that the company delivered results largely in line with expectations. 
+    However, since the stock had already risen by approximately \textbf{36\%}, 
+    it was considered “hot,” and therefore dropped around \textbf{6\%} after earnings \cite{cnbc}. 
+    He also interviewed CEO \textbf{Hal Lawton}, 
+    who highlighted several themes: the viral popularity of the \textbf{TikTok “skeleton chicken”}, 
+    the trend of \textbf{millennials relocating to rural areas}, 
+    and the company’s growing \textbf{Neighbors Club membership program}, 
+    strengthened by the acquisition of \textbf{Alabat}.
+\vspace{0.3cm}
+
+     \textbf{Evaluation:} The viral TikTok “skeleton rooster” was a short-term phenomenon, unlikely to provide long-term value. 
+    However, Tractor Supply’s membership-based foundation (\textbf{37+ million members}) 
+    and demographic shifts toward rural living create sustainable revenue growth. 
+    These fundamentals outweigh one-time viral boosts and suggest long-term positive signals.
+\vspace{0.7cm}
+
+
+    \item \textbf{Tapestry - Capri acquisition} -- Kramer discussed the FTC lawsuit against Tapestry’s planned acquisition of Capri, 
+    which Judge \textbf{Jennifer Rochon} ultimately blocked \cite{ftc}. 
+\vspace{0.3cm}
+    
+\textbf{Evaluation:} The acquisition was announced on \textbf{10.08.2023} with an all-cash 
+offer of \textbf{\$57 per share}, presenting a premium of about \textbf{59\%}. 
+Capri’s stock immediately surged by nearly \textbf{55\%}. 
+When the FTC filed its lawsuit on \textbf{16.08.2024}, concerns intensified, 
+and after Judge Rochon blocked the deal on \textbf{24.10.2024}, 
+the stock collapsed by around \textbf{52\%}. 
+However, Capri’s stock had already fallen by about \textbf{42\%} during the year after the announcement, 
+showing how regulatory uncertainty eroded confidence well before the final ruling. 
+This case illustrates how merger enthusiasm can quickly reverse under regulatory pressure.
+\end{itemize}
+
+\begin{thebibliography}{9}
+
+\bibitem{cnbc} CNBC. (2024, October 25). \textit{Mad Money with Jim Cramer}. [Video]. YouTube.  
+\url{https://www.youtube.com/watch?v=1QRyRy0QUz0}
+
+\bibitem{wikipedia} Wikipedia contributors. (2024). \textit{2024 McDonald’s E. coli outbreak}. In \textit{Wikipedia}.  
+Retrieved from \url{https://en.wikipedia.org/wiki/2024_McDonald%27s_E._coli_outbreak}
+
+\bibitem{yahoo} Yahoo Finance. (2024). \textit{Stock performance data for McDonald’s, AMD, UPS, Tractor Supply, Capri}.  
+Retrieved from \url{https://finance.yahoo.com}
+
+\bibitem{amdQ1}
+Advanced Micro Devices. (2025, May 6).
+\textit{AMD Reports First Quarter 2025 Financial Results}.
+AMD Investor Relations.
+\url{https://ir.amd.com/news-events/press-releases/detail/1247/amd-reports-first-quarter-2025-financial-results}
+
+\bibitem{reutersUPS} Reuters. (2024, July 31). \textit{U.S. port strike hits global supply chains}.  
+Retrieved from \url{https://www.reuters.com}
+
+\bibitem{ftc} U.S. Federal Trade Commission. (2024, August 16). \textit{FTC Sues to Block Tapestry’s \$8.5B Acquisition of Capri Holdings}.  
+Retrieved from \url{https://www.ftc.gov}
+
+\end{thebibliography}
+\end{document}
