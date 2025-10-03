@@ -10,6 +10,8 @@
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{float}     % enables [H] to place figures exactly "HERE"
+\usepackage{placeins}  % provides \FloatBarrier to stop floats moving past a point
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
 
 % ---------- Colors (optional subtle accent) ----------
@@ -96,21 +98,22 @@ Thus, stocks have been among the most closely examined assets by investors and r
 Therefore, indicators of future performance hold significant importance for investors and analysts seeking to anticipate market movements. 
 To see the effects of these signals, and how they occurred, the audio of CNBC's \textbf{\textit{Mad Money}} episode \textit{\textbf{10/25/24}} is inspected.
 
-\vspace{1cm}
+\vspace{1.1cm}
 The media under inspection follows a unique structure: the narrator, Jim Cramer, 
 discusses stocks one by one, almost like a case study. 
 Accordingly, and considering how word-of-mouth information and financial data 
 can affect stock performance, his examples are investigated as follows, 
 with a focus on how they relate to our analysis.
+\vspace{1.1cm}
 
 \section*{Methodology}
 The purpose of this report is to examine how market-related news, media commentary, 
 and unexpected events can influence stock performance. 
 For this purpose, we analyzed selected cases from CNBC's \textbf{Mad Money} episode 
 on \textbf{10/25/24} and correlated them with \textbf{stock price movements over the same period}. 
-In addition, external sources were used to provide background and verification.
+In addition, external sources were used to provide background and verification. In addition, throughout this report the term short term refers to a period of approximately 2–4 months, as is commonly stated in quarterly reports. The term long term is used for any period longer than this short-term window. 
 
-\vspace{0.3cm}
+\newpage
 Our analysis followed two main steps:
 \begin{enumerate}
     \item Identification of key cases mentioned by Jim Cramer that had the potential 
@@ -132,7 +135,7 @@ with stock price movements, this \textbf{does not necessarily mean} that the hig
 was the \textbf{sole} cause of the price increase, decrease, or stability. 
 Stock performance is affected by \textbf{dozens of factors}, if not hundreds, and the events discussed here
 should be considered as \textbf{potential contributors} rather than exclusive driver forces.
-\vspace{0.3cm}
+\vspace{1.1cm}
 
 
 
@@ -152,10 +155,20 @@ At that time the stock was up by \textbf{1.20\%} relative to the baseline, and b
 As a conclusion, the incident was effectively counterbalanced by the company’s promotional meal deal.
 \vspace{0.7cm}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{mcdonalds.jpeg}
+    \caption{McDonald's respective stock data}\cite{MCD}
+    \label{fig:mcd}
+\end{figure}
+\FloatBarrier
 
 
-    \item \textbf{AMD} -- The narrator emphasized that the \textbf{artificial intelligence (AI) market} continues to expand rapidly. 
-    While AMD cannot realistically challenge \textbf{NVIDIA’s market dominance}, 
+
+
+\vspace{1.1cm}
+
+\item \textbf{AMD} -- The narrator emphasized that the \textbf{artificial intelligence (AI) market} continues to expand rapidly.     While AMD cannot realistically challenge \textbf{NVIDIA’s market dominance}, 
     the overall growth of the sector indicates that AMD’s share of the \textbf{“AI Hype”} will also increase significantly \cite{cnbc}.
 \vspace{0.3cm}
 
@@ -168,6 +181,14 @@ remained intact. As a result, long-term optimism around the AI market helped sta
 even though export restrictions and new customs regulations continued to affect revenues in the following 6--12 months. Moreover, the stock price had a steady increase to today, 11 \% increase between the dates 25.10.2024 - 10.02.2025, even surpassing the previous stock price while still suffering from the restrictions.\cite{AMD}
 \newpage
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{amd.jpeg}
+    \caption{AMD's respective stock data}\cite{AMD}
+    \label{fig:amd}
+\end{figure}
+\FloatBarrier
+\vspace{1.1cm}
 
     \item \textbf{UPS} -- Kramer emphasized that the main issue for UPS is \textbf{trust}. 
     Investors and analysts had lost confidence in management due to repeated underperformances, which left UPS in the era of \textbf{“show me stock”} \cite{cnbc}. 
@@ -181,8 +202,16 @@ even though export restrictions and new customs regulations continued to affect 
     it was essentially “artificial” and unsustainable. 
     UPS regained trust only after it showed real financial improvement in Q3, 
     demonstrating that short-term events can generate signals but lasting recovery depends on consistent performance.
-\vspace{0.7cm}
+\vspace{1.5cm}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{upsd.jpeg}
+    \caption{UPS's respective stock data\cite{UPS}}
+    \label{fig:ups}
+\end{figure}
+\FloatBarrier
+\vspace{1.1cm}
 
     \item \textbf{Tractor Supply} -- Kramer assessed Tractor Supply positively, 
     noting that the company delivered results largely in line with expectations. 
@@ -193,13 +222,13 @@ even though export restrictions and new customs regulations continued to affect 
     the trend of \textbf{millennials relocating to rural areas}, 
     and the company’s growing \textbf{Neighbors Club membership program}, 
     strengthened by the acquisition of \textbf{Allivet} \cite{AllivetPR}.
-\vspace{0.3cm}
+\vspace{0.8cm}
 
      \textbf{Evaluation:} The viral TikTok “skeleton rooster” was a short-term phenomenon, unlikely to provide long-term value. 
     However, Tractor Supply’s membership-based foundation (\textbf{37+ million members}) 
     and demographic shifts toward rural living create sustainable revenue growth. 
     These fundamentals outweigh one-time viral boosts and suggest long-term positive signals. However, due to the seasonal nature of the company’s business and the influence of many other factors, it is not sufficient to evaluate performance based solely on this news.
-\vspace{0.7cm}
+\newpage
 
 
     \item \textbf{Tapestry - Capri acquisition} -- Kramer discussed the FTC lawsuit against Tapestry’s planned acquisition of Capri, 
@@ -215,19 +244,41 @@ the stock collapsed by around \textbf{52\%} \cite{CPRI}.
 However, Capri’s stock had already fallen by about \textbf{42\%} during the year after the announcement \cite{CPRI}, 
 showing how regulatory uncertainty eroded confidence well before the final ruling. 
 This case illustrates how merger enthusiasm can quickly reverse under regulatory pressure.
+\vspace{1.1cm}
 
-\newpage
-\textbf{Evaluation for Tapestry:} When the acquisition was announced, Tapestry faced the opposite reaction compared to Capri, with probably fewer long-term effects. Tapestry’s stock dropped by about \textbf{17\%} at the announcement but later rose by around \textbf{14\%} after the FTC canceled the deal. Between the announcement and the cancellation period, the stock had increased approximately \textbf{20\%}. Thus, the acquisition news had short-term effects on the stock price. During the period of uncertainty, investors may have gained confidence since there was a chance the deal would not happen. Finally, when it was canceled, even though Tapestry lost a major growth opportunity, investors were relieved that the heavy financial burden of the acquisition was removed and quoted as \textbf{"...it ultimately dodged a bullet by not taking on the problems at Capri}.\cite{forbesTapestry}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{capri.jpeg}
+    \caption{Capri's respective stock data}\cite{CPRI}
+    \label{fig:capri}
+\end{figure}
+\FloatBarrier
+
+\vspace{1cm}
+\textbf{Evaluation for Tapestry:} When the acquisition was announced, Tapestry faced the opposite reaction compared to Capri, with probably fewer long-term effects. Tapestry’s stock dropped by about \textbf{17\%} at the announcement but later rose by around \textbf{14\%} after the FTC canceled the deal.\cite{TPR} Between the announcement and the cancellation period, the stock had increased approximately \textbf{20\%}. Thus, the acquisition news had short-term effects on the stock price. During the period of uncertainty, investors may have gained confidence since there was a chance the deal would not happen. Finally, when it was canceled, even though Tapestry lost a major growth opportunity, investors were relieved that the heavy financial burden of the acquisition was removed, and in Forbes by Danziger , it is quoted as \textbf{"...it ultimately dodged a bullet by not taking on the problems at Capri}.\cite{forbesTapestry}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{Tapestry.jpeg}
+    \caption{Tapestry's respective stock data}\cite{TPR}
+    \label{fig:tapestry}
+\end{figure}
+\FloatBarrier
+
+
+
 
 \end{itemize}
 
+\vspace{1.1cm}
 
 \section*{Conclusion}
 
 \begin{quote}
-Lastly, Kramer relates important events happening at the time with the stocks, which we used to examine further. For example: McDonald’s E. coli incident and its corresponding stock price; AMD’s export restrictions to China versus the AI hype over time; UPS’s event and its short-term effects; Tractor Supply’s long-term investments and how they could benefit the company; and the Tapestry–Capri acquisition and how it affected Capri \& Tapestry
+Lastly, Kramer relates important events happening at the time with the stocks, which we used to examine further. For example: McDonald’s E. coli incident and its corresponding stock price; AMD’s export restrictions to China versus AI hype over time; UPS' event and its short-term effects; Tractor Supply’s long-term investments and how they could benefit the company; and the Tapestry–Capri acquisition and how it affected Capri \& Tapestry.  However,  even though these findings are not the only driver behind the stock market, as countless other factors affect the market, we attempted to highlight where a possible correlation may exist. 
 \end{quote}
-
+\newpage
 
 \begin{thebibliography}{9}
 \bibitem{amdQ1} Advanced Micro Devices. (2025, May 6).  
@@ -274,9 +325,9 @@ Retrieved from \url{https://finance.yahoo.com/quote/CPRI/history}
 \textit{McDonald’s Corporation (MCD) Stock Historical Data}.  
 Retrieved from \url{https://finance.yahoo.com/quote/MCD/history}
 
-\bibitem{TSCO} Yahoo Finance. (2024).  
-\textit{Tractor Supply Company (TSCO) Stock Historical Data}.  
-Retrieved from \url{https://finance.yahoo.com/quote/TSCO/history}
+\bibitem{TPR} Yahoo Finance. (2024).  
+\textit{Tapestry, Inc. (TPR) Stock Historical Data}.  
+Retrieved from \url{https://finance.yahoo.com/quote/TPR/history}
 
 \bibitem{UPS} Yahoo Finance. (2024).  
 \textit{United Parcel Service, Inc. (UPS) Stock Historical Data}.  
